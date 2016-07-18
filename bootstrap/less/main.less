@@ -1,0 +1,244 @@
+/*
+Theme Name: rede-abrolhos
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rede-abrolhos
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+rede-abrolhos is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+@import "bootstrap.less";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Colors
+# Typography
+# Elements
+# Forms
+# Header
+        ## faixa verde top
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@media (min-width: @screen-sm-min){
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        > li {
+            float: none;
+            display: inline-block;
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+@verde-escuro: #006d46;
+@verde-claro: #7fcb44;
+@cinza-texto: #6f6f6e;
+@branco-fundo: #f9f9f9;
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700);
+
+@sourceSansPro: 'Source Sans Pro', sans-serif;
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+h2.carousel {
+    font-family: @sourceSansPro;
+    color: @branco-fundo;
+    text-align: justify;
+}
+
+
+h1.home {
+    font-family: @sourceSansPro;
+    color: @verde-escuro;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: @sourceSansPro;
+    color: @cinza-texto;
+}
+
+
+
+/*--------------------------------------------------------------
+## botoes
+--------------------------------------------------------------*/
+.btn-saiba-mais{
+    .btn;
+    .button-variant(@branco-fundo, @verde-claro, @verde-claro);
+    padding: 0px 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Faixa verde top
+--------------------------------------------------------------*/
+#faixa-verde-top{
+    background-color: @verde-escuro;
+    text-align: right;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    p {
+        margin: 0px;
+        color: @branco-fundo;
+        img{
+            padding-right: 20px;
+
+        }
+        a{
+            color: @branco-fundo;
+            &:active{
+                font-weight: bold;
+            }
+            &:hover{
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+#menu-principal{
+
+    .navbar-default {
+        background-color: transparent; 
+        border-color: transparent;
+        border: 0;
+        height: 110px;
+    }
+    .navbar-header{
+        .navbar-brand{
+            img{
+                height: 75px;
+            }
+        }
+    }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{
+    margin-top: 40px;
+    p, a{
+        color: @branco-fundo;
+
+    }
+
+    /*--------------------------------------------------------------
+    ## Faixa verde bootom
+    --------------------------------------------------------------*/
+    #faxa-verde-bottom{
+        background-color: @verde-escuro;
+
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--------------------------------------------------------------
+# carousel-home
+--------------------------------------------------------------*/
+#carousel-home{
+
+    border-bottom: 5px solid @verde-claro;
+
+    .carousel-texto{
+
+        h2{
+            margin-top: -150px;
+        }
+
+    }
+
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+#home{
+    h1{
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+    p{
+        text-align: center;
+        font-size: 19px;
+        line-height: 28px;
+    }
+}
+
