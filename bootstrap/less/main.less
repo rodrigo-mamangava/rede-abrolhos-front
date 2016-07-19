@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Reset 
 # Colors
 # Typography
 # Elements
@@ -49,6 +50,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
 @media (min-width: @screen-sm-min){
     .navbar-nav {
         width: 100%;
@@ -61,6 +66,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 }
 
+h1, h2, h3, h4, p, a{
+    margin: 0;
+    padding: 0;
+}
 
 /*--------------------------------------------------------------
 # Colors
@@ -76,27 +85,62 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @sourceSansPro: 'Source Sans Pro', sans-serif;
 
+@extra-light: 200;
+@light: 300;
+@normal: 400;
+@semi-bold: 600;
+@bold: 700;
+@ultra-bold: 900;
+
+h1, h2, h3, h4, p, a, *{
+    font-family: @sourceSansPro;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 
-h2.carousel {
-    font-family: @sourceSansPro;
+.titulo-carousel {
     color: @branco-fundo;
     text-align: justify;
+    font-size: 41px;
 }
 
 
-h1.home {
-    font-family: @sourceSansPro;
+.titulo-destaque {
     color: @verde-escuro;
     text-align: center;
     text-transform: uppercase;
 }
 
-p {
-    font-family: @sourceSansPro;
+.texto {
     color: @cinza-texto;
+    font-size: 27.5px;
+    line-height: 50px;
+}
+
+.texto-menu{
+    font-size: 22px;
+    color: @cinza-texto;
+}
+
+
+.titulo-footer{
+    font-size: 18px;
+    color: @branco-fundo;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.texto-footer{
+    font-size: 18px;
+    color: @branco-fundo;
+    line-height: 18px;
+}
+
+.texto-footer-branco{
+    font-size: 13px;    
+    color: @verde-escuro;
 }
 
 
@@ -110,6 +154,8 @@ p {
     padding: 0px 10px;
     margin-top: 80px;
     margin-bottom: 80px;
+    font-size: 18px;
+
 }
 
 
@@ -152,11 +198,33 @@ p {
 --------------------------------------------------------------*/
 #menu-principal{
 
+    a{
+        .texto-menu;
+    }
+
     .navbar-default {
         background-color: transparent; 
         border-color: transparent;
         border: 0;
         height: 110px;
+
+        .navbar-nav{
+            margin-top: -20px;
+
+            .active{
+                a{
+                    border-bottom: 1px solid @verde-claro;
+                    background-color: transparent;
+                    &:hover, &:focus{
+                        border-bottom: 1px solid @verde-claro;
+                        background-color: transparent;
+                    } 
+                }
+            }
+
+
+        }
+
     }
     .navbar-header{
         .navbar-brand{
@@ -166,14 +234,37 @@ p {
         }
     }
 }
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer{
+footer{    
     margin-top: 40px;
+
+
+    h3{
+        .titulo-footer;
+        padding-bottom: 18px;
+    }
+
     p, a{
         color: @branco-fundo;
+        .texto-footer; 
+        padding-bottom: 18px;
+        img{
+            width: 35px;
+            height: auto;
+            padding-right: 5px;
+        }
+    }
 
+    a{
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     /*--------------------------------------------------------------
@@ -181,7 +272,48 @@ footer{
     --------------------------------------------------------------*/
     #faxa-verde-bottom{
         background-color: @verde-escuro;
+        padding-top: 45px;
 
+    }
+
+    #faixa-branca-bottom{
+        .logos {
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+
+                li {
+                    display: inline;
+                    list-style-type: none;
+                    padding: 0 20px;                    
+                    img{
+                        height: 45px;
+                        margin-top: 30px;                        
+                        margin-bottom: 30px;                        
+                    }
+                }
+            }
+        }
+
+        p{
+            .texto-footer-branco;
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+    
+    #faixa-verde-bottom-2{
+        background-color: @verde-escuro;
+
+        p{
+            .texto-footer-branco;
+            color: @branco-fundo;
+            padding: 15px 0;
+            text-align: center;
+        }
     }
 }
 
@@ -218,7 +350,8 @@ footer{
     .carousel-texto{
 
         h2{
-            margin-top: -150px;
+            .titulo-carousel;
+            margin-top: -200px;
         }
 
     }
@@ -232,13 +365,13 @@ footer{
 --------------------------------------------------------------*/
 #home{
     h1{
+        .titulo-destaque;
         margin-top: 90px;
         margin-bottom: 60px;
     }
     p{
+        .texto;
         text-align: center;
-        font-size: 19px;
-        line-height: 28px;
     }
 }
 

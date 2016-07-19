@@ -6750,6 +6750,7 @@ button.close {
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Reset 
 # Colors
 # Typography
 # Elements
@@ -6772,6 +6773,9 @@ button.close {
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
 @media (min-width: 768px) {
   .navbar-nav {
     width: 100%;
@@ -6782,29 +6786,66 @@ button.close {
     display: inline-block;
   }
 }
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-h2.carousel {
-  font-family: 'Source Sans Pro', sans-serif;
+.titulo-carousel {
   color: #f9f9f9;
   text-align: justify;
+  font-size: 41px;
 }
-h1.home {
-  font-family: 'Source Sans Pro', sans-serif;
+.titulo-destaque {
   color: #006d46;
   text-align: center;
   text-transform: uppercase;
 }
-p {
-  font-family: 'Source Sans Pro', sans-serif;
+.texto {
   color: #6f6f6e;
+  font-size: 27.5px;
+  line-height: 50px;
+}
+.texto-menu {
+  font-size: 22px;
+  color: #6f6f6e;
+}
+.titulo-footer {
+  font-size: 18px;
+  color: #f9f9f9;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.texto-footer {
+  font-size: 18px;
+  color: #f9f9f9;
+  line-height: 18px;
+}
+.texto-footer-branco {
+  font-size: 13px;
+  color: #006d46;
 }
 /*--------------------------------------------------------------
 ## botoes
@@ -6834,6 +6875,7 @@ p {
   padding: 0px 10px;
   margin-top: 80px;
   margin-bottom: 80px;
+  font-size: 18px;
 }
 .btn-saiba-mais:focus,
 .btn-saiba-mais:active:focus,
@@ -6958,11 +7000,27 @@ fieldset[disabled] .btn-saiba-mais.focus {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#menu-principal a {
+  font-size: 22px;
+  color: #6f6f6e;
+}
 #menu-principal .navbar-default {
   background-color: transparent;
   border-color: transparent;
   border: 0;
   height: 110px;
+}
+#menu-principal .navbar-default .navbar-nav {
+  margin-top: -20px;
+}
+#menu-principal .navbar-default .navbar-nav .active a {
+  border-bottom: 1px solid #7fcb44;
+  background-color: transparent;
+}
+#menu-principal .navbar-default .navbar-nav .active a:hover,
+#menu-principal .navbar-default .navbar-nav .active a:focus {
+  border-bottom: 1px solid #7fcb44;
+  background-color: transparent;
 }
 #menu-principal .navbar-header .navbar-brand img {
   height: 75px;
@@ -6976,12 +7034,67 @@ footer {
     ## Faixa verde bootom
     --------------------------------------------------------------*/
 }
+footer h3 {
+  font-size: 18px;
+  color: #f9f9f9;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 18px;
+}
 footer p,
 footer a {
+  font-size: 18px;
   color: #f9f9f9;
+  line-height: 18px;
+  padding-bottom: 18px;
+}
+footer p img,
+footer a img {
+  width: 35px;
+  height: auto;
+  padding-right: 5px;
+}
+footer a {
+  cursor: pointer;
+}
+footer a:hover {
+  text-decoration: none;
 }
 footer #faxa-verde-bottom {
   background-color: #006d46;
+  padding-top: 45px;
+}
+footer #faixa-branca-bottom .logos ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+footer #faixa-branca-bottom .logos ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 20px;
+}
+footer #faixa-branca-bottom .logos ul li img {
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer #faixa-branca-bottom p {
+  font-size: 13px;
+  color: #006d46;
+  padding-top: 30px;
+  text-align: center;
+}
+footer #faixa-verde-bottom-2 {
+  background-color: #006d46;
+}
+footer #faixa-verde-bottom-2 p {
+  font-size: 13px;
+  color: #006d46;
+  color: #f9f9f9;
+  padding: 15px 0;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Alignments
@@ -7009,7 +7122,10 @@ footer #faxa-verde-bottom {
   border-bottom: 5px solid #7fcb44;
 }
 #carousel-home .carousel-texto h2 {
-  margin-top: -150px;
+  color: #f9f9f9;
+  text-align: justify;
+  font-size: 41px;
+  margin-top: -200px;
 }
 /*--------------------------------------------------------------
 # Content
@@ -7018,11 +7134,15 @@ footer #faxa-verde-bottom {
 ## Posts and pages
 --------------------------------------------------------------*/
 #home h1 {
+  color: #006d46;
+  text-align: center;
+  text-transform: uppercase;
   margin-top: 90px;
   margin-bottom: 60px;
 }
 #home p {
+  color: #6f6f6e;
+  font-size: 27.5px;
+  line-height: 50px;
   text-align: center;
-  font-size: 19px;
-  line-height: 28px;
 }
