@@ -71,6 +71,10 @@ h1, h2, h3, h4, p, a{
     padding: 0;
 }
 
+a{
+    cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
@@ -107,13 +111,34 @@ h1, h2, h3, h4, p, a, *{
 }
 
 
-.titulo-destaque {
-    color: @verde-escuro;
-    text-align: center;
+.titulo {
+    color: @verde-escuro;   
+    font-size: 41px;   
     text-transform: uppercase;
+    font-weight: @normal;
+}
+
+.titulo-destaque{
+    color: @verde-escuro;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 7.5px;
+}
+
+.sub-titulo{
+    color: @verde-claro;
+    font-size: 27.5px;  
+    line-height: 30px;
+    font-weight: @semi-bold;
 }
 
 .texto {
+    color: @cinza-texto;
+    font-size: 23px;
+    line-height: 31px;    
+}
+
+.texto-destaque{
     color: @cinza-texto;
     font-size: 27.5px;
     line-height: 50px;
@@ -304,7 +329,7 @@ footer{
             text-align: center;
         }
     }
-    
+
     #faixa-verde-bottom-2{
         background-color: @verde-escuro;
 
@@ -363,15 +388,52 @@ footer{
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Home
+--------------------------------------------------------------*/
 #home{
     h1{
-        .titulo-destaque;
+        .titulo-destaque;        
         margin-top: 90px;
         margin-bottom: 60px;
     }
     p{
-        .texto;
+        .texto-destaque;
         text-align: center;
     }
 }
 
+/*--------------------------------------------------------------
+### Contato
+--------------------------------------------------------------*/
+#contato{
+
+    h1{
+        .titulo;        
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    h2{
+        .sub-titulo;
+    }
+    p{
+        .texto;
+    }
+
+    ul.social{
+        list-style-type: none;
+        li{
+            padding-bottom: 25px;
+            a{
+                font-size: 28px;
+                color: @verde-escuro;
+                img{
+                    padding-right: 10px;
+                }
+            }
+
+        }
+
+    }
+
+}

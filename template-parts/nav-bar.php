@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.php">
                     <img alt="Rede Abrolhos" src="image/header/rede-abrolhos-logo.png">
                 </a>
             </div>
@@ -17,11 +17,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Eixo temático <span class="sr-only">(current)</span></a></li>
+                    <li><a href="rede.php">A Rede</a></li>
+                    <li><a href="#">Eixo temático</a></li>
                     <li><a href="#">Publicações</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="contato.php">Contato</a></li>
 <!--                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">

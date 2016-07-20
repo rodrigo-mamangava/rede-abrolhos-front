@@ -6795,6 +6795,9 @@ a {
   margin: 0;
   padding: 0;
 }
+a {
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
@@ -6818,12 +6821,30 @@ a,
   text-align: justify;
   font-size: 41px;
 }
+.titulo {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 .titulo-destaque {
   color: #006d46;
+  font-size: 50px;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 7.5px;
+}
+.sub-titulo {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
 }
 .texto {
+  color: #6f6f6e;
+  font-size: 23px;
+  line-height: 31px;
+}
+.texto-destaque {
   color: #6f6f6e;
   font-size: 27.5px;
   line-height: 50px;
@@ -7133,10 +7154,14 @@ footer #faixa-verde-bottom-2 p {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Home
+--------------------------------------------------------------*/
 #home h1 {
   color: #006d46;
+  font-size: 50px;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 7.5px;
   margin-top: 90px;
   margin-bottom: 60px;
 }
@@ -7145,4 +7170,39 @@ footer #faixa-verde-bottom-2 p {
   font-size: 27.5px;
   line-height: 50px;
   text-align: center;
+}
+/*--------------------------------------------------------------
+### Contato
+--------------------------------------------------------------*/
+#contato h1 {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#contato h2 {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
+}
+#contato p {
+  color: #6f6f6e;
+  font-size: 23px;
+  line-height: 31px;
+}
+#contato ul.social {
+  list-style-type: none;
+}
+#contato ul.social li {
+  padding-bottom: 25px;
+}
+#contato ul.social li a {
+  font-size: 28px;
+  color: #006d46;
+}
+#contato ul.social li a img {
+  padding-right: 10px;
 }

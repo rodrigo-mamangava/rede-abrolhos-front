@@ -30,36 +30,47 @@
 
 
 
-        <div id="home">
-
-
-            <?php include './template-parts/carrosel.php'; ?>
-
+        <div id="contato">
 
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 class="home">A Rede Abrolhos</h1>
-                        <p>
-                            A Rede Abrolhos integra iniciativas inter-institucionais de pesquisa, capacitação, 
-                            formação de recursos humanos e gestão ambiental produzindo e transmitindo 
-                            conhecimento sobre o maior recife coralíneo do Atlântico Sul, o Banco do Abrolhos. 
-                            São metas da Rede Abrolhos o entendimento dos processos relacionados a 
-                            estruturação e a dinâmica dos recifes coralíneos frente a diferentes estressores locais, 
-                            regionais e mundiais (pesca predatória, sedimentação, aquecimento global) e a 
-                            conservação da biodiversidade. O conhecimento produzido pela Rede Abrolhos tem 
-                            contribuído para efetivação de políticas públicas na gestão dos ecossistemas marinhos, 
-                            na mitigação e na adaptação dos sistemas recifais às mudanças locais, regionais e 
-                            climáticas globais.
-                        </p>
-                    </div>
-                    <div class="col-xs-12 text-center">
-                        <a class="btn-saiba-mais">saiba mais</a>
+
+                        <section>
+
+                            <h1>Entre em contato conosco</h1>
+
+                            <h2>Rede Abrolhos</h2>
+
+                            <p>Instituto de Pesquisas Jardim Botânico do Rio de Janeiro</p>
+                            <p>Rua Pacheco Leão 915 – CEP 22460-030 – Rio de Janeiro – RJ</p>
+                            <br/>
+                            <p>Tel: +55 (21) 3204 2150</p>
+                            <br/>
+                            <p>redeabrolhos@gmail.com</p>
+
+                        </section>
+                        <section>
+                            <h1>Siga-nos nas redes sociais</h1>
+                            
+                            <ul class="social">
+                                <li>
+                                    <a><img src="image/social/face-verde.png" >Facebook</a>
+                                </li>
+                                <li>
+                                    <a><img src="image/social/you-verde.png">Youtube</a>
+                                </li>
+                                <li>
+                                    <a><img src="image/social/twitter-verde.png">Twitter</a>
+                                </li>
+                            </ul>
+                            
+                        </section>
 
                     </div>
                 </div>
             </div>
-        </div><!-- #home-texto -->
+        </div><!-- #contato -->
 
         <footer>
             <?php include './template-parts/faixa-verde-bottom.php'; ?>            
