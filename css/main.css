@@ -7253,9 +7253,16 @@ footer #faixa-verde-bottom-2 p {
   line-height: 40px;
   color: #7fcb44;
   padding-bottom: 45px;
+  font-weight: 600;
 }
 #rede ol li span {
   color: #6f6f6e;
+  font-weight: 400;
+}
+#rede img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 30px;
 }
 #rede .btn-saiba-mais {
   margin-top: 60px;

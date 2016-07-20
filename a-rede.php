@@ -131,6 +131,31 @@
                             <h1>Financiamento</h1>
                             
                             
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_BRASOIL.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_PELD.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_CNPQ.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_Capes.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_FAPES.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_FAPERJ.png">
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="image/logo-parceiros/Rede_abrolhos_logos_FAPESP.png">
+                                </div>
+                            </div>
+                            
+                            
 
            
 
