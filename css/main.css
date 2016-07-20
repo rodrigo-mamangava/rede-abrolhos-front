@@ -7367,3 +7367,66 @@ footer #faixa-verde-bottom-2 p {
     bottom: initial;
   }
 }
+#noticias .passador {
+  padding-bottom: 20px;
+}
+#noticias .passador p {
+  color: #006d46;
+  font-size: 23px;
+  font-weight: 600;
+}
+#noticias .passador p span {
+  padding: 0 10px;
+}
+/*--------------------------------------------------------------
+### Galeria de imagens
+--------------------------------------------------------------*/
+#galeria h1 {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#galeria h2 {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  text-transform: uppercase;
+}
+#galeria p {
+  color: #6f6f6e;
+  font-size: 25px;
+  line-height: 40px;
+}
+#galeria .galeria-fotos {
+  margin-left: 10px;
+}
+#galeria .galeria-fotos > div {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#galeria .galeria-fotos > div img {
+  width: 100%;
+  height: auto;
+}
+/*--------------------------------------------------------------
+# blueimp-gallery
+--------------------------------------------------------------*/
+.blueimp-gallery > .description {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  color: #fff;
+  display: none;
+}
+.blueimp-gallery-controls > .description {
+  display: block;
+}

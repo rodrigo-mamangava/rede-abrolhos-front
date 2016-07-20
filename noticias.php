@@ -124,16 +124,31 @@
                         </div><!--noticia-->
 
                     </div>
-                </div>
+                </div><!-- row -->
 
-            </div>
-        </div><!-- #contato -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="passador">
+                            <p>
+                                <span> < </span>
+                                <span> 1 </span>
+                                <span> 2 </span>
+                                <span> 3 </span>
+                                <span> 4 </span>
+                                <span> > </span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- row -->
 
-        <footer>
-            <?php include './template-parts/faixa-verde-bottom.php'; ?>            
-            <?php include './template-parts/faixa-branca-bottom.php'; ?>            
-            <?php include './template-parts/faixa-verde-bottom-2.php'; ?>
-        </footer>
+            </div><!-- container -- >
+        </div><!-- #noticias -->
+
+            <footer>
+                <?php include './template-parts/faixa-verde-bottom.php'; ?>            
+                <?php include './template-parts/faixa-branca-bottom.php'; ?>            
+                <?php include './template-parts/faixa-verde-bottom-2.php'; ?>
+            </footer>
 
     </body>
 </html>

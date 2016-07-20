@@ -21,7 +21,7 @@
                     <li><a href="#">Eixo temático</a></li>
                     <li><a href="publicacoes.php">Publicações</a></li>
                     <li><a href="noticias.php">Notícias</a></li>
-                    <li><a href="#">Galeria</a></li>
+                    <li><a href="galeria.php">Galeria</a></li>
                     <li><a href="contato.php">Contato</a></li>
 <!--                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
