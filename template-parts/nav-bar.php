@@ -17,7 +17,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="rede.php">A Rede</a></li>
+                    <li><a href="a-rede.php">A Rede</a></li>
                     <li><a href="#">Eixo temático</a></li>
                     <li><a href="#">Publicações</a></li>
                     <li><a href="#">Notícias</a></li>

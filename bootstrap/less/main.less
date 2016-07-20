@@ -134,8 +134,8 @@ h1, h2, h3, h4, p, a, *{
 
 .texto {
     color: @cinza-texto;
-    font-size: 23px;
-    line-height: 31px;    
+    font-size: 25px;
+    line-height: 40px;    
 }
 
 .texto-destaque{
@@ -168,6 +168,16 @@ h1, h2, h3, h4, p, a, *{
     color: @verde-escuro;
 }
 
+
+h1{
+    .titulo;
+}
+h2{
+    .sub-titulo;
+}
+p{
+    .texto;
+}
 
 
 /*--------------------------------------------------------------
@@ -202,6 +212,7 @@ h1, h2, h3, h4, p, a, *{
     p {
         margin: 0px;
         color: @branco-fundo;
+        font-size: 17px;
         img{
             padding-right: 20px;
 
@@ -209,10 +220,10 @@ h1, h2, h3, h4, p, a, *{
         a{
             color: @branco-fundo;
             &:active{
-                font-weight: bold;
+                //font-weight: bold;
             }
             &:hover{
-                font-weight: bold;
+                //font-weight: bold;
                 text-decoration: none;
             }
         }
@@ -435,5 +446,48 @@ footer{
         }
 
     }
+
+}
+
+/*--------------------------------------------------------------
+### Contato
+--------------------------------------------------------------*/
+#rede{
+
+    h1{
+        .titulo;        
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    h2{
+        .sub-titulo;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    p{
+        .texto;
+    }
+
+    ol{
+        padding-left: 22px;
+        
+        li{
+            .texto;
+            color: @verde-claro;
+            padding-bottom: 45px;
+
+            span { 
+                color: @cinza-texto; 
+            }
+        }
+    }
+
+
+
+    .btn-saiba-mais{
+        margin-top: 60px; 
+        margin-bottom: 30px; 
+    }
+
 
 }

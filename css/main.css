@@ -6841,8 +6841,8 @@ a,
 }
 .texto {
   color: #6f6f6e;
-  font-size: 23px;
-  line-height: 31px;
+  font-size: 25px;
+  line-height: 40px;
 }
 .texto-destaque {
   color: #6f6f6e;
@@ -6867,6 +6867,23 @@ a,
 .texto-footer-branco {
   font-size: 13px;
   color: #006d46;
+}
+h1 {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h2 {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
+}
+p {
+  color: #6f6f6e;
+  font-size: 25px;
+  line-height: 40px;
 }
 /*--------------------------------------------------------------
 ## botoes
@@ -7004,6 +7021,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
 #faixa-verde-top p {
   margin: 0px;
   color: #f9f9f9;
+  font-size: 17px;
 }
 #faixa-verde-top p img {
   padding-right: 20px;
@@ -7011,11 +7029,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
 #faixa-verde-top p a {
   color: #f9f9f9;
 }
-#faixa-verde-top p a:active {
-  font-weight: bold;
-}
 #faixa-verde-top p a:hover {
-  font-weight: bold;
   text-decoration: none;
 }
 /*--------------------------------------------------------------
@@ -7190,8 +7204,8 @@ footer #faixa-verde-bottom-2 p {
 }
 #contato p {
   color: #6f6f6e;
-  font-size: 23px;
-  line-height: 31px;
+  font-size: 25px;
+  line-height: 40px;
 }
 #contato ul.social {
   list-style-type: none;
@@ -7205,4 +7219,45 @@ footer #faixa-verde-bottom-2 p {
 }
 #contato ul.social li a img {
   padding-right: 10px;
+}
+/*--------------------------------------------------------------
+### Contato
+--------------------------------------------------------------*/
+#rede h1 {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#rede h2 {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#rede p {
+  color: #6f6f6e;
+  font-size: 25px;
+  line-height: 40px;
+}
+#rede ol {
+  padding-left: 22px;
+}
+#rede ol li {
+  color: #6f6f6e;
+  font-size: 25px;
+  line-height: 40px;
+  color: #7fcb44;
+  padding-bottom: 45px;
+}
+#rede ol li span {
+  color: #6f6f6e;
+}
+#rede .btn-saiba-mais {
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
