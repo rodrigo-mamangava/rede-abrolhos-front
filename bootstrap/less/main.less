@@ -82,6 +82,7 @@ a{
 @verde-claro: #7fcb44;
 @cinza-texto: #6f6f6e;
 @branco-fundo: #f9f9f9;
+@branco: #ffffff;
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -142,6 +143,12 @@ h1, h2, h3, h4, p, a, *{
     color: @cinza-texto;
     font-size: 27.5px;
     line-height: 50px;
+}
+
+.texto-noticia{
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: @normal;
 }
 
 .texto-menu{
@@ -519,6 +526,98 @@ footer{
     }
     p{
         .texto;
+    }
+
+}
+
+/*--------------------------------------------------------------
+### Noticias
+--------------------------------------------------------------*/
+#noticias{
+
+    h1{
+        .titulo;        
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
+    .noticia{
+        position: relative;
+        border-top: 5px solid @verde-claro;
+        margin-bottom:  60px;
+        background-color: @branco;
+
+
+        img{
+            height: 350px;
+            
+            @media (max-width: @screen-xs-max){                
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        //colunas com a mesma altura
+        @media (min-width: @screen-sm-min){
+            .row {
+                display: table;
+            }
+
+            .row [class*="col-"] {
+                float: none;
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+
+
+
+        h2{
+            font-size: 27.5px;
+            line-height: 30px;
+            font-weight: @semi-bold;
+            color: @verde-escuro;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: @normal;
+
+            @media (max-width: @screen-xs-max){
+                padding-bottom: 30px;
+
+
+            }
+
+
+        }
+
+        a{
+
+            .texto-noticia;
+            color: @cinza-texto;
+            position: absolute;
+            bottom: 30px;
+
+            @media (max-width: @screen-xs-max){
+                position: relative;
+                bottom: initial;
+            }
+
+        }
+
+
+
+
+
+
+
     }
 
 }

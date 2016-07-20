@@ -20,7 +20,7 @@
                     <li><a href="a-rede.php">A Rede</a></li>
                     <li><a href="#">Eixo temático</a></li>
                     <li><a href="publicacoes.php">Publicações</a></li>
-                    <li><a href="#">Notícias</a></li>
+                    <li><a href="noticias.php">Notícias</a></li>
                     <li><a href="#">Galeria</a></li>
                     <li><a href="contato.php">Contato</a></li>
 <!--                    <li class="dropdown">
