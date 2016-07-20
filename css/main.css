@@ -7268,3 +7268,29 @@ footer #faixa-verde-bottom-2 p {
   margin-top: 60px;
   margin-bottom: 30px;
 }
+/*--------------------------------------------------------------
+### Publicações
+--------------------------------------------------------------*/
+#publicacoes h1 {
+  color: #006d46;
+  font-size: 41px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#publicacoes h2 {
+  color: #7fcb44;
+  font-size: 27.5px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  text-transform: uppercase;
+}
+#publicacoes p {
+  color: #6f6f6e;
+  font-size: 25px;
+  line-height: 40px;
+}
