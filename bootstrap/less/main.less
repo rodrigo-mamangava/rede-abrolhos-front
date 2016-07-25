@@ -81,6 +81,7 @@ a{
 @verde-escuro: #006d46;
 @verde-claro: #7fcb44;
 @cinza-texto: #6f6f6e;
+@cinza-linha: #ebebeb;
 @branco-fundo: #f9f9f9;
 @branco: #ffffff;
 /*--------------------------------------------------------------
@@ -109,12 +110,15 @@ h1, h2, h3, h4, p, a, *{
     color: @branco-fundo;
     text-align: justify;
     font-size: 41px;
+    font-size: 4.1rem;
+    line-height: 45px;
 }
 
 
 .titulo {
     color: @verde-escuro;   
-    font-size: 41px;   
+    font-size: 41px;
+    font-size: 4.1rem;
     text-transform: uppercase;
     font-weight: @normal;
 }
@@ -122,56 +126,74 @@ h1, h2, h3, h4, p, a, *{
 .titulo-destaque{
     color: @verde-escuro;
     font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     letter-spacing: 7.5px;
 }
 
+.titulo-footer{
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: @branco-fundo;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
 .sub-titulo{
     color: @verde-claro;
-    font-size: 27.5px;  
+    font-size: 27.5px;
+    font-size: 2.75rem;
     line-height: 30px;
     font-weight: @semi-bold;
+}
+.sub-titulo-equipe{
+    color: @verde-escuro;
+    font-size: 41px;  
+    font-size: 4.1rem;
+    line-height: 41px;
+    font-weight: @normal;
+    text-transform: initial;
 }
 
 .texto {
     color: @cinza-texto;
     font-size: 25px;
+    font-size: 2.5rem;
     line-height: 40px;    
 }
 
 .texto-destaque{
     color: @cinza-texto;
     font-size: 27.5px;
+    font-size: 2.75rem;
     line-height: 50px;
 }
 
 .texto-noticia{
     font-size: 20px;
+    font-size: 2rem;
     line-height: 29px;
     font-weight: @normal;
 }
 
 .texto-menu{
     font-size: 22px;
+    font-size: 2.2rem;
     color: @cinza-texto;
 }
 
 
-.titulo-footer{
-    font-size: 18px;
-    color: @branco-fundo;
-    font-weight: bold;
-    line-height: 1.5;
-}
 
 .texto-footer{
     font-size: 18px;
+    font-size: 1.8rem;
     color: @branco-fundo;
     line-height: 18px;
 }
 
 .texto-footer-branco{
-    font-size: 13px;    
+    font-size: 13px;   
+    font-size: 1.3rem;
     color: @verde-escuro;
 }
 
@@ -186,6 +208,18 @@ p{
     .texto;
 }
 
+.border-top-verde(@intensidade){
+    border-top: 5px solid @intensidade;
+}
+
+
+.card{
+    position: relative;
+    .border-top-verde(@verde-claro);
+    margin-bottom:  60px;
+    background-color: @branco;   
+}
+
 
 /*--------------------------------------------------------------
 ## botoes
@@ -197,6 +231,7 @@ p{
     margin-top: 80px;
     margin-bottom: 80px;
     font-size: 18px;
+    font-size: 1.8rem;
 
 }
 
@@ -245,14 +280,30 @@ p{
         .texto-menu;
     }
 
+
+
     .navbar-default {
         background-color: transparent; 
         border-color: transparent;
         border: 0;
         height: 110px;
 
+        @media (max-width: @screen-sm-max){
+            background-color: @branco-fundo; 
+            border: initial;
+            height: initial;
+        }
+
+        .navbar-collapse, .navbar-form {
+            border-top: 0;
+        }
+
         .navbar-nav{
             margin-top: -20px;
+
+            @media (max-width: @screen-sm-max){
+                margin-top: 15px;
+            }
 
             .active{
                 a{
@@ -262,6 +313,15 @@ p{
                         border-bottom: 1px solid @verde-claro;
                         background-color: transparent;
                     } 
+                }
+
+                @media (max-width: @screen-sm-max){
+                    a{
+                        background-color: initial;
+                        &:hover, &:focus{
+                            background-color: initial;
+                        } 
+                    }
                 }
             }
 
@@ -273,6 +333,13 @@ p{
         .navbar-brand{
             img{
                 height: 75px;
+
+                @media (max-width: @screen-sm-max){
+                    height: 45px;
+                    margin-top: -11px;
+                }
+
+
             }
         }
     }
@@ -316,6 +383,7 @@ footer{
     #faxa-verde-bottom{
         background-color: @verde-escuro;
         padding-top: 45px;
+        padding-bottom: 45px;
 
     }
 
@@ -387,6 +455,8 @@ footer{
 # carousel-home
 --------------------------------------------------------------*/
 #carousel-home{
+
+    .hidden-xs;
 
     border-bottom: 5px solid @verde-claro;
 
@@ -530,6 +600,9 @@ footer{
 
 }
 
+
+
+
 /*--------------------------------------------------------------
 ### Noticias
 --------------------------------------------------------------*/
@@ -541,11 +614,8 @@ footer{
         margin-bottom: 60px;
     }
 
-    .noticia{
-        position: relative;
-        border-top: 5px solid @verde-claro;
-        margin-bottom:  60px;
-        background-color: @branco;
+    .card-noticia{
+        .card;
 
         img{
             height: 350px;            
@@ -570,6 +640,7 @@ footer{
 
         h2{
             font-size: 27.5px;
+            font-size: 2.75rem;
             line-height: 30px;
             font-weight: @semi-bold;
             color: @verde-escuro;
@@ -580,6 +651,7 @@ footer{
 
         p{
             font-size: 20px;
+            font-size: 2rem;
             line-height: 29px;
             font-weight: @normal;
 
@@ -613,6 +685,7 @@ footer{
         p{
             color: @verde-escuro;
             font-size: 23px;
+            font-size: 2.3rem;
             font-weight: @semi-bold;
 
             span{
@@ -647,11 +720,22 @@ footer{
 
     .galeria-fotos{
         margin-left: 10px;
+
+        @media (max-width: @screen-xs-max){
+            margin-left: 0px;
+        }
+
+
         &>div{
             padding-left: 5px;
             padding-right: 5px;
             padding-top: 5px;
             padding-bottom: 5px;
+
+            @media (max-width: @screen-xs-max){
+                padding-left: 15px;
+                padding-right: 15px;
+            }
 
             img{
                 width: 100%;
@@ -664,6 +748,180 @@ footer{
 
 
 
+}
+/*--------------------------------------------------------------
+### Equipe
+--------------------------------------------------------------*/
+#equipe{
+
+
+    h1{
+        .titulo;        
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    h2{
+        .sub-titulo-equipe;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    p{
+        .texto;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 23px;
+        padding: 15px 0;
+        border-top: 1px solid @cinza-linha;
+    }
+
+
+    .card-equipe{
+        .card;
+        padding: 30px;
+
+        min-height: 450px;
+
+        img{
+            .img-responsive;
+        }
+        h3{
+            padding-top: 60px;
+            font-size: 30px;
+            font-size: 3rem;
+            line-height: 33px;
+            color: @verde-escuro;
+
+            @media (max-width: @screen-xs-max){
+                padding-top: 0px;
+            }
+        }
+        h4{
+            padding-top: 10px;
+            font-size: 24px;
+            font-size: 2.4rem;
+            color: @cinza-texto;
+        }
+
+    }
+
+}
+
+/*--------------------------------------------------------------
+# equipe-single
+--------------------------------------------------------------*/
+#equipe-single{
+
+    br{
+        padding-bottom: 15px;
+        content: "A" !important;
+        display: block !important;
+    }
+
+    .header-equipe{
+        position: relative;
+        .border-top-verde(@verde-claro);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .curriculo-equipe{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid @verde-claro;               
+    }
+
+
+    h1{
+        .titulo;
+        font-size: 31px;
+        font-size: 3.1rem;
+        line-height: 37px;
+        font-weight: @semi-bold;        
+    }
+    h2{
+        .sub-titulo;
+        font-weight: @normal;
+        padding-bottom: 30px;
+
+    }
+    h3{
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 29px;
+        font-weight: @normal;
+        color: @verde-escuro;
+
+        &:first-of-type{
+            padding-top: 0px;
+        }
+    }
+
+
+    p, li{
+        .texto;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 29px;
+    }
+
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+
+        li { 
+            padding-left: 15px; 
+            text-indent: -.7em;
+
+            &:before {
+                content: "• ";
+                color: @verde-claro; 
+            }
+        }
+    }
+
+
+
+
+
+    img{
+        width: 100%;
+        height: auto;
+        //padding-left: 15px;
+    }
+
+    a{
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 29px;
+        font-weight: @semi-bold;
+        color: @cinza-texto;
+    }
+
+    .links{
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+        width: 100%;
+
+        @media (max-width: @screen-sm-max){
+            position: relative;
+            bottom: initial;
+            text-align: left;
+            padding-top: 15px;
+        }
+
+        a{
+            font-size: 24px;
+            font-size: 2.4rem;
+            line-height: 35px;
+
+            color: @verde-claro;
+        }
+
+    }
 }
 
 /*--------------------------------------------------------------

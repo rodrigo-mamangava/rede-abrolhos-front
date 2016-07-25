@@ -42,7 +42,7 @@
                 <div class="row">                    
                     <div class="col-xs-12">
 
-                        <div class="noticia">
+                        <div class="card-noticia">
                             <div class="row">
                                 <div  class="col-sm-6">
                                     <img class="img-responsive" src="image/notícias/noticias thumb 01.jpg">
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                         </div><!--noticia-->
-                        <div class="noticia">
+                        <div class="card-noticia">
                             <div class="row">
                                 <div  class="col-sm-6">
                                     <img class="img-responsive" src="image/notícias/noticias thumb 02.jpg">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </div><!--noticia-->
-                        <div class="noticia">
+                        <div class="card-noticia">
                             <div class="row">
                                 <div  class="col-sm-6">
                                     <img class="img-responsive" src="image/notícias/noticias thumb 03.jpg">
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                         </div><!--noticia-->
-                        <div class="noticia">
+                        <div class="card-noticia">
                             <div class="row">
                                 <div  class="col-sm-6">
                                     <img class="img-responsive" src="image/notícias/noticias thumb 04.jpg">

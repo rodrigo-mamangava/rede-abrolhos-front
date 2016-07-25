@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/XAMPP/htdocs/rede-abrolhos-front/index.php</file>
-            <file>file:/Applications/XAMPP/htdocs/rede-abrolhos-front/template-parts/faixa-verde-top.php</file>
-            <file>file:/Applications/XAMPP/htdocs/rede-abrolhos-front/bootstrap/less/main.less</file>
-            <file>file:/Applications/XAMPP/htdocs/rede-abrolhos-front/bootstrap/less/bootstrap.less</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/rede-abrolhos-front/bootstrap/less/main.less</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/rede-abrolhos-front/js/blueimp-extra.js</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/rede-abrolhos-front/template-parts/blueimp-gallery.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/rede-abrolhos-front/galeria.php</file>
         </group>
     </open-files>
 </project-private>

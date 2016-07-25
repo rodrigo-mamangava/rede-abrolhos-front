@@ -53,58 +53,85 @@
                 <div class="row">
                     <div  id="links" class="galeria-fotos">
                         <div class="col-sm-6 col-md-3">
-                            <a href="image/galeria/galeria 01 full.jpg" title="Foto 01" data-description="This is a banana." data-gallery>
+                            <a href="image/galeria/galeria 01 full.jpg" title="Foto 01" data-description="Essa é a descrição da foto 01." data-gallery>
                                 <img src="image/galeria/galeria 01 thumb.jpg" alt="Foto 01">
                             </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <a href="image/galeria/galeria 02 full.jpg" title="Foto 02" data-description="This is a banana." data-gallery>
+                            <a href="image/galeria/galeria 02 full.jpg" title="Foto 02" data-description="Essa é a descrição da foto 02." data-gallery>
                                 <img src="image/galeria/galeria 02 thumb.jpg" alt="Foto 02">
                             </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 03 thumb.jpg">                            
+                            <a href="image/galeria/galeria 03 full.jpg" title="Foto 03" data-description="Essa é a descrição da foto 03." data-gallery>
+                                <img src="image/galeria/galeria 03 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 04 thumb.jpg">                            
+                            <a href="image/galeria/galeria 04 full.jpg" title="Foto 04" data-description="Essa é a descrição da foto 04." data-gallery>
+                                <img src="image/galeria/galeria 04 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 05 thumb.jpg">                            
+                            <a href="image/galeria/galeria 05 full.jpg" title="Foto 05" data-description="Essa é a descrição da foto 05." data-gallery>
+                                <img src="image/galeria/galeria 05 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 06 thumb.jpg">                            
+                            <a href="image/galeria/galeria 06 full.jpg" title="Foto 06" data-description="Essa é a descrição da foto 06." data-gallery>
+                                <img src="image/galeria/galeria 06 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 07 thumb.jpg">                            
+                            <a href="image/galeria/galeria 07 full.jpg" title="Foto 07" data-description="Essa é a descrição da foto 07." data-gallery>
+                                <img src="image/galeria/galeria 07 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 08 thumb.jpg">                            
+                            <a href="image/galeria/galeria 08 full.jpg" title="Foto 08" data-description="Essa é a descrição da foto 08." data-gallery>
+                                <img src="image/galeria/galeria 08 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 01 thumb.jpg">                            
+                            <a href="image/galeria/galeria 01 full.jpg" title="Foto 01" data-description="Essa é a descrição da foto 01." data-gallery>
+                                <img src="image/galeria/galeria 01 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 02 thumb.jpg">                            
+                            <a href="image/galeria/galeria 02 full.jpg" title="Foto 02" data-description="Essa é a descrição da foto 02." data-gallery>
+                                <img src="image/galeria/galeria 02 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 03 thumb.jpg">                            
+                            <a href="image/galeria/galeria 03 full.jpg" title="Foto 03" data-description="Essa é a descrição da foto 03." data-gallery>
+                                <img src="image/galeria/galeria 03 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 04 thumb.jpg">                            
+                            <a href="image/galeria/galeria 04 full.jpg" title="Foto 04" data-description="Essa é a descrição da foto 04." data-gallery>
+                                <img src="image/galeria/galeria 04 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 05 thumb.jpg">                            
+                            <a href="image/galeria/galeria 05 full.jpg" title="Foto 05" data-description="Essa é a descrição da foto 05." data-gallery>
+                                <img src="image/galeria/galeria 05 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 06 thumb.jpg">                            
+                            <a href="image/galeria/galeria 06 full.jpg" title="Foto 06" data-description="Essa é a descrição da foto 06." data-gallery>
+                                <img src="image/galeria/galeria 06 thumb.jpg" alt="Foto 02">
+                            </a>                     
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 07 thumb.jpg">                            
+                            <a href="image/galeria/galeria 07 full.jpg" title="Foto 07" data-description="Essa é a descrição da foto 07." data-gallery>
+                                <img src="image/galeria/galeria 07 thumb.jpg" alt="Foto 01">
+                            </a>                        
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <img class="img-responsive" src="image/galeria/galeria 08 thumb.jpg">                            
-                        </div>
-
+                            <a href="image/galeria/galeria 08 full.jpg" title="Foto 08" data-description="Essa é a descrição da foto 08." data-gallery>
+                                <img src="image/galeria/galeria 08 thumb.jpg" alt="Foto 02">
+                            </a>                     
+                        </div>                       
                     </div>
 
                 </div>
