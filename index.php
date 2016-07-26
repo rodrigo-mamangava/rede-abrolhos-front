@@ -7,6 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Rede Abrolhos</title>
 
+        <script src="https://use.fontawesome.com/8879a685b4.js"></script>
         <!-- Bootstrap -->
         <link href="css/main.css" rel="stylesheet">
 

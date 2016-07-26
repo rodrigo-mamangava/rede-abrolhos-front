@@ -6812,6 +6812,7 @@ p,
 a,
 * {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 # Elements
@@ -6918,6 +6919,16 @@ p {
   border-top: 5px solid #7fcb44;
   margin-bottom: 60px;
   background-color: #ffffff;
+}
+.li-horizontal ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.li-horizontal ul li {
+  display: inline;
+  list-style-type: none;
 }
 /*--------------------------------------------------------------
 ## botoes
@@ -7075,6 +7086,10 @@ fieldset[disabled] .btn-saiba-mais.focus {
   font-size: 2.2rem;
   color: #6f6f6e;
 }
+#menu-principal .search a {
+  font-size: 16px;
+  font-size: 1.6rem !important;
+}
 #menu-principal .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -7120,6 +7135,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
 }
 #menu-principal .navbar-header .navbar-brand img {
   height: 75px;
+  margin-left: 15px;
 }
 @media (max-width: 991px) {
   #menu-principal .navbar-header .navbar-brand img {
@@ -7689,6 +7705,75 @@ footer #faixa-verde-bottom-2 p {
   font-size: 2.4rem;
   line-height: 35px;
   color: #7fcb44;
+}
+/*--------------------------------------------------------------
+# artigos
+--------------------------------------------------------------*/
+#artigos h1 {
+  color: #006d46;
+  font-size: 41px;
+  font-size: 4.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 31px;
+  font-size: 3.1rem;
+  line-height: 37px;
+  font-weight: 600;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#artigos h2 {
+  color: #006d46;
+  padding-top: 60px;
+}
+#artigos h3 {
+  font-size: 23px;
+  font-size: 2.3rem;
+  line-height: 31px;
+  color: #7fcb44;
+  padding-top: 15px;
+}
+#artigos h3:first-of-type {
+  padding-top: 0px;
+}
+#artigos p {
+  color: #6f6f6e;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-size: 23px;
+  font-size: 2.3rem;
+  line-height: 31px;
+}
+#artigos ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#artigos ul li {
+  display: inline;
+  list-style-type: none;
+}
+#artigos ul {
+  text-align: left;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#artigos ul li {
+  padding: 0 10px;
+}
+#artigos ul li a {
+  color: #7fcb44;
+  font-weight: 600;
+  font-size: 41px;
+  font-size: 4.1rem;
+}
+#artigos ul li a:hover {
+  text-decoration: none;
+}
+#artigos ul li a.active {
+  color: #006d46;
 }
 /*--------------------------------------------------------------
 # blueimp-gallery

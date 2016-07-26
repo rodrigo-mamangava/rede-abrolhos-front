@@ -7,12 +7,15 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Rede Abrolhos</title>
 
-        <!-- Bootstrap -->
-        <link href="css/main.css" rel="stylesheet">
 
 
         <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
         <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+        <script src="https://use.fontawesome.com/8879a685b4.js"></script>
+
+        <!-- Bootstrap -->
+        <link href="css/main.css" rel="stylesheet">
+
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
