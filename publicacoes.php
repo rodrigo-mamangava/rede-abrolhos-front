@@ -46,8 +46,8 @@
                                 As principais publicações recentes da Rede.
                             </p>
 
-                            <a><h2>Artigos científicos</h2></a>
-                            <a><h2>Divulgação na mídia</h2></a>
+                            <a href="artigos.php"><h2>Artigos científicos</h2></a>
+                            <a href="divulgacao-midia.php"><h2>Divulgação na mídia</h2></a>
 
                      </div>
                 </div>

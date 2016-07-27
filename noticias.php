@@ -59,7 +59,7 @@
                                         580 gramas de carbonato de cálcio 
                                         por ano. 
                                     </p>
-                                    <a>Leia mais...</a>
+                                    <a href="notcia-single.php">Leia mais...</a>
                                 </div>
                             </div>
                         </div><!--noticia-->
