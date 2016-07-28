@@ -73,6 +73,9 @@ h1, h2, h3, h4, p, a{
 
 a{
     cursor: pointer;
+    &:hover{
+        text-decoration: none !important;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -83,7 +86,8 @@ a{
 @cinza-texto: #6f6f6e;
 @cinza-linha: #ebebeb;
 @branco-fundo: #f9f9f9;
-@branco: #ffffff;
+@off-white: #f9f9f9;
+@branco: #fff;
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -107,22 +111,26 @@ h1, h2, h3, h4, p, a, *{
 # Elements
 --------------------------------------------------------------*/
 
+body{
+    background-color: @off-white;
+}
+
 .titulo-carousel {
     color: @branco-fundo;
     text-align: justify;
-    font-size: 41px;
-    font-size: 4.1rem;
-    line-height: 45px;
+    font-size: 34px;
+    font-size: 3.4rem;
+    line-height: 42px;
 }
 
 
 .titulo {
     color: @verde-escuro;   
-    font-size: 41px;
-    font-size: 4.1rem;
-    line-height: 41px;
+    font-size: 34px;
+    font-size: 3.4rem;
+    line-height: 40px;
     text-transform: uppercase;
-    font-weight: @normal;
+    font-weight: 400;
 }
 
 .titulo-destaque{
@@ -133,20 +141,37 @@ h1, h2, h3, h4, p, a, *{
     letter-spacing: 7.5px;
 }
 
+.head-line{
+    color: @verde-escuro;   
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.head-line-2{
+    color: @verde-escuro;   
+    font-size: 45px;
+    font-size: 4.5rem;
+    line-height: 54px;
+    font-weight: 400;
+}
+
 .titulo-footer{
     font-size: 18px;
     font-size: 1.8rem;
     color: @branco-fundo;
     font-weight: bold;
     line-height: 1.5;
+    text-transform: uppercase;
 }
 
 .sub-titulo{
     color: @verde-claro;
-    font-size: 27.5px;
-    font-size: 2.75rem;
-    line-height: 30px;
-    font-weight: @semi-bold;
+    font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    font-weight: 400;
 }
 .sub-titulo-equipe{
     color: @verde-escuro;
@@ -157,26 +182,27 @@ h1, h2, h3, h4, p, a, *{
     text-transform: initial;
 }
 
-.texto {
+.texto-corrido {
     color: @cinza-texto;
-    font-size: 25px;
-    font-size: 2.5rem;
-    line-height: 40px;    
+    font-size: 22.5px;
+    font-size: 2.25rem;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.texto-corrido-variacao{
+    .texto-corrido;
+    font-weight: 400;
 }
 
 .texto-destaque{
     color: @cinza-texto;
-    font-size: 27.5px;
-    font-size: 2.75rem;
-    line-height: 50px;
+    font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 47px;
+    font-weight: 300;
 }
 
-.texto-noticia{
-    font-size: 20px;
-    font-size: 2rem;
-    line-height: 29px;
-    font-weight: @normal;
-}
 
 .texto-menu{
     font-size: 22px;
@@ -207,7 +233,7 @@ h2{
     .sub-titulo;
 }
 p{
-    .texto;
+    .texto-corrido;
 }
 
 .border-top-verde(@intensidade){
@@ -270,7 +296,7 @@ p{
     }
 
     p{
-        .texto;
+        .texto-corrido;
         padding-top: 30px;
     }
 
@@ -278,7 +304,7 @@ p{
         padding-left: 23px;
 
         li{
-            .texto;
+            .texto-corrido;
 
         }
     }
@@ -331,6 +357,8 @@ p{
     margin-bottom: 80px;
     font-size: 18px;
     font-size: 1.8rem;
+    line-height: 18px;
+    border-radius: 0;
 
 }
 
@@ -375,6 +403,8 @@ p{
 --------------------------------------------------------------*/
 #menu-principal{
 
+    background-color: @branco;
+
     a{
         .texto-menu;
     }
@@ -395,6 +425,7 @@ p{
         border-color: transparent;
         border: 0;
         height: 110px;
+        margin-bottom: 0px;
 
         @media (max-width: @screen-sm-max){
             background-color: @branco-fundo; 
@@ -461,10 +492,8 @@ p{
 footer{    
     margin-top: 270px;
 
-
     h3{
         .titulo-footer;
-        padding-bottom: 18px;
     }
 
     p, a{
@@ -494,11 +523,38 @@ footer{
     #faxa-verde-bottom{
         background-color: @verde-escuro;
         padding-top: 45px;
-        padding-bottom: 45px;
+        padding-bottom:(45px-18px);
 
     }
 
     #faixa-branca-bottom{
+
+        .rede{
+            padding-top: 30px;
+            .caixa-image{
+                float: left;
+                    img{
+                    height: 65px;
+                    width: auto;
+                }
+            }
+            .caixa-txt{
+                float: left;
+                padding-top: 15px;
+                padding-left: 30px;
+
+                p{
+                    font-size: 13px;
+                    line-height: 17px;
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+
+                }
+
+            }
+        }
+
         .logos {
 
             ul {
@@ -540,6 +596,11 @@ footer{
 }
 
 
+.sombra-coluna{
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Alignments
@@ -569,7 +630,7 @@ footer{
 
     .hidden-xs;
 
-    border-bottom: 5px solid @verde-claro;
+    border-bottom: 6px solid @verde-claro;
 
     .carousel-texto{
 
@@ -592,7 +653,8 @@ footer{
 --------------------------------------------------------------*/
 #home{
     h1{
-        .titulo-destaque;        
+        .head-line;
+        text-align: center;
         margin-top: 90px;
         margin-bottom: 60px;
     }
@@ -616,7 +678,7 @@ footer{
         .sub-titulo;
     }
     p{
-        .texto;
+        .texto-corrido;
     }
 
     ul.social{
@@ -653,21 +715,21 @@ footer{
         margin-bottom: 30px;
     }
     p{
-        .texto;
+        .texto-corrido;
     }
 
     ol{
         padding-left: 22px;
 
         li{
-            .texto;
+            .texto-corrido;
+            font-weight: 400;
             color: @verde-claro;
             padding-bottom: 45px;
-            font-weight: @semi-bold;
 
             span { 
                 color: @cinza-texto; 
-                font-weight: @normal;
+                font-weight: 300;
             }
         }
     }
@@ -706,7 +768,7 @@ footer{
         text-transform: uppercase;
     }
     p{
-        .texto;
+        .texto-corrido;
     }
 
 }
@@ -759,10 +821,7 @@ footer{
         }
 
         p{
-            font-size: 20px;
-            font-size: 2rem;
-            line-height: 29px;
-            font-weight: @normal;
+            .texto-corrido;
 
             @media (max-width: @screen-xs-max){
                 padding-bottom: 30px;
@@ -775,10 +834,10 @@ footer{
 
         a{
 
-            .texto-noticia;
+            .texto-corrido;
             color: @cinza-texto;
             position: absolute;
-            bottom: 30px;
+            bottom: 0px;
 
             @media (max-width: @screen-xs-max){
                 position: relative;
@@ -824,7 +883,7 @@ footer{
         text-transform: uppercase;
     }
     p{
-        .texto;
+        .texto-corrido;
     }
 
 }
@@ -841,17 +900,14 @@ footer{
         margin-bottom: 30px;
     }
     h2{
-        .sub-titulo-equipe;
-
+        .titulo;
         margin-top: 30px;
         margin-bottom: 30px;
         text-transform: uppercase;
     }
     p{
-        .texto;
-        font-size: 20px;
-        font-size: 2rem;
-        line-height: 23px;
+        .texto-corrido;
+
         padding: 15px 0;
         border-top: 1px solid @cinza-linha;
     }
@@ -861,7 +917,7 @@ footer{
         .card;
         padding: 30px;
 
-        min-height: 450px;
+        min-height: 520px;
 
         img{
             .img-responsive;
@@ -872,6 +928,7 @@ footer{
             font-size: 3rem;
             line-height: 33px;
             color: @verde-escuro;
+            margin-left: -15px;
 
             @media (max-width: @screen-xs-max){
                 padding-top: 0px;
@@ -882,6 +939,7 @@ footer{
             font-size: 24px;
             font-size: 2.4rem;
             color: @cinza-texto;
+            margin-left: -15px;
         }
 
     }
@@ -891,7 +949,18 @@ footer{
 /*--------------------------------------------------------------
 # equipe-single
 --------------------------------------------------------------*/
+
+.body-equipe{
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
 #equipe-single{
+
+    background-color: @off-white;
+    margin: 0 15px 15px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+
+
 
     br{
         padding-bottom: 15px;
@@ -940,10 +1009,8 @@ footer{
 
 
     p, li{
-        .texto;
-        font-size: 20px;
-        font-size: 2rem;
-        line-height: 29px;
+        .texto-corrido;
+
     }
 
     ul {
@@ -954,6 +1021,7 @@ footer{
         li { 
             padding-left: 15px; 
             text-indent: -.7em;
+            padding-bottom: 30px;
 
             &:before {
                 content: "• ";
@@ -985,6 +1053,7 @@ footer{
         bottom: 0;
         text-align: right;
         width: 100%;
+        padding-right: 30px;
 
         @media (max-width: @screen-sm-max){
             position: relative;
@@ -1038,10 +1107,7 @@ footer{
 
 
     p{
-        .texto;
-        font-size: 23px;
-        font-size: 2.3rem;
-        line-height: 31px;
+        .texto-corrido;
 
     }
 
@@ -1116,10 +1182,7 @@ footer{
         }
 
         p{
-            .texto;
-            font-size: 20px;
-            font-size: 2rem;
-            line-height: 29px;
+            .texto-corrido;
         }
 
     }
@@ -1153,7 +1216,7 @@ footer{
     }
 
     p{
-        .texto;
+        .texto-corrido;
     }
 
     h2{
@@ -1180,10 +1243,7 @@ footer{
 
 
             a{
-                .texto;
-                font-size: 27.5px;
-                font-size: 2.75rem;
-                line-height: 49px;
+                .texto-corrido;
 
             }
 
@@ -1236,7 +1296,7 @@ footer{
     }
 
     p{
-        .texto;
+        .texto-corrido;
         padding-top: 45px;
     }
 
@@ -1259,11 +1319,11 @@ footer{
 
         h2{
             .sub-titulo;
-                
+
         }
 
         p{
-            .texto;
+            .texto-corrido;
         }
 
     }

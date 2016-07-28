@@ -23,11 +23,8 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <header>
-            <?php include './template-parts/faixa-verde-top.php'; ?>
-            <?php include './template-parts/nav-bar.php'; ?>
-        </header>
+    <body class="body-equipe">
+
 
 
 
@@ -200,11 +197,6 @@
             </div>
         </div><!-- #equipe-single -->
 
-        <footer>
-            <?php include './template-parts/faixa-verde-bottom.php'; ?>            
-            <?php include './template-parts/faixa-branca-bottom.php'; ?>            
-            <?php include './template-parts/faixa-verde-bottom-2.php'; ?>
-        </footer>
 
     </body>
 </html>

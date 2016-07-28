@@ -6798,6 +6798,9 @@ a {
 a {
   cursor: pointer;
 }
+a:hover {
+  text-decoration: none !important;
+}
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
@@ -6817,18 +6820,21 @@ a,
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+body {
+  background-color: #f9f9f9;
+}
 .titulo-carousel {
   color: #f9f9f9;
   text-align: justify;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 45px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 42px;
 }
 .titulo {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -6839,19 +6845,34 @@ a,
   text-align: center;
   letter-spacing: 7.5px;
 }
+.head-line {
+  color: #006d46;
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 48px;
+  font-weight: 400;
+}
+.head-line-2 {
+  color: #006d46;
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 54px;
+  font-weight: 400;
+}
 .titulo-footer {
   font-size: 18px;
   font-size: 1.8rem;
   color: #f9f9f9;
   font-weight: bold;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 .sub-titulo {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
 }
 .sub-titulo-equipe {
   color: #006d46;
@@ -6861,23 +6882,27 @@ a,
   font-weight: 400;
   text-transform: initial;
 }
-.texto {
+.texto-corrido {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
+}
+.texto-corrido-variacao {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
+  font-weight: 400;
 }
 .texto-destaque {
   color: #6f6f6e;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 50px;
-}
-.texto-noticia {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
-  font-weight: 400;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 47px;
+  font-weight: 300;
 }
 .texto-menu {
   font-size: 22px;
@@ -6897,24 +6922,25 @@ a,
 }
 h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
 }
 h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
-}
-p {
-  color: #6f6f6e;
   font-size: 25px;
   font-size: 2.5rem;
   line-height: 40px;
+  font-weight: 400;
+}
+p {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
 }
 .card {
   position: relative;
@@ -6937,9 +6963,9 @@ p {
 }
 .single h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 60px;
@@ -6953,9 +6979,9 @@ p {
 }
 .single h2 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 0px;
@@ -6967,9 +6993,10 @@ p {
 }
 .single p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
   padding-top: 30px;
 }
 .single ol,
@@ -6979,9 +7006,10 @@ p {
 .single ol li,
 .single ul li {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
 }
 .single hr {
   margin-top: 75px;
@@ -7042,6 +7070,8 @@ p {
   margin-bottom: 80px;
   font-size: 18px;
   font-size: 1.8rem;
+  line-height: 18px;
+  border-radius: 0;
 }
 .btn-saiba-mais:focus,
 .btn-saiba-mais:active:focus,
@@ -7163,6 +7193,9 @@ fieldset[disabled] .btn-saiba-mais.focus {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#menu-principal {
+  background-color: #ffffff;
+}
 #menu-principal a {
   font-size: 22px;
   font-size: 2.2rem;
@@ -7177,6 +7210,7 @@ fieldset[disabled] .btn-saiba-mais.focus {
   border-color: transparent;
   border: 0;
   height: 110px;
+  margin-bottom: 0px;
 }
 @media (max-width: 991px) {
   #menu-principal .navbar-default {
@@ -7240,7 +7274,7 @@ footer h3 {
   color: #f9f9f9;
   font-weight: bold;
   line-height: 1.5;
-  padding-bottom: 18px;
+  text-transform: uppercase;
 }
 footer p,
 footer a {
@@ -7265,7 +7299,29 @@ footer a:hover {
 footer #faxa-verde-bottom {
   background-color: #006d46;
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 27px;
+}
+footer #faixa-branca-bottom .rede {
+  padding-top: 30px;
+}
+footer #faixa-branca-bottom .rede .caixa-image {
+  float: left;
+}
+footer #faixa-branca-bottom .rede .caixa-image img {
+  height: 65px;
+  width: auto;
+}
+footer #faixa-branca-bottom .rede .caixa-txt {
+  float: left;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+footer #faixa-branca-bottom .rede .caixa-txt p {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 footer #faixa-branca-bottom .logos ul {
   margin: 0;
@@ -7324,7 +7380,7 @@ footer #faixa-verde-bottom-2 p {
 # carousel-home
 --------------------------------------------------------------*/
 #carousel-home {
-  border-bottom: 5px solid #7fcb44;
+  border-bottom: 6px solid #7fcb44;
 }
 @media (max-width: 767px) {
   #carousel-home {
@@ -7334,9 +7390,9 @@ footer #faixa-verde-bottom-2 p {
 #carousel-home .carousel-texto h2 {
   color: #f9f9f9;
   text-align: justify;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 45px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 42px;
   margin-top: -200px;
 }
 /*--------------------------------------------------------------
@@ -7350,18 +7406,20 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #home h1 {
   color: #006d46;
-  font-size: 50px;
-  font-size: 5rem;
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 48px;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 7.5px;
   margin-top: 90px;
   margin-bottom: 60px;
 }
 #home p {
   color: #6f6f6e;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 50px;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 47px;
+  font-weight: 300;
   text-align: center;
 }
 /*--------------------------------------------------------------
@@ -7369,9 +7427,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #contato h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7379,16 +7437,17 @@ footer #faixa-verde-bottom-2 p {
 }
 #contato h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
-}
-#contato p {
-  color: #6f6f6e;
   font-size: 25px;
   font-size: 2.5rem;
   line-height: 40px;
+  font-weight: 400;
+}
+#contato p {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
 }
 #contato ul.social {
   list-style-type: none;
@@ -7408,9 +7467,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #rede h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7418,34 +7477,36 @@ footer #faixa-verde-bottom-2 p {
 }
 #rede h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
   margin-top: 60px;
   margin-bottom: 30px;
 }
 #rede p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
 }
 #rede ol {
   padding-left: 22px;
 }
 #rede ol li {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
+  font-weight: 400;
   color: #7fcb44;
   padding-bottom: 45px;
-  font-weight: 600;
 }
 #rede ol li span {
   color: #6f6f6e;
-  font-weight: 400;
+  font-weight: 300;
 }
 #rede img {
   height: 60px;
@@ -7461,9 +7522,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #publicacoes h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7471,10 +7532,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #publicacoes h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
   margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 45px;
@@ -7482,18 +7543,19 @@ footer #faixa-verde-bottom-2 p {
 }
 #publicacoes p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
 }
 /*--------------------------------------------------------------
 ### Noticias
 --------------------------------------------------------------*/
 #noticias h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7534,10 +7596,11 @@ footer #faixa-verde-bottom-2 p {
   padding-bottom: 30px;
 }
 #noticias .card-noticia p {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
-  font-weight: 400;
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   #noticias .card-noticia p {
@@ -7545,13 +7608,13 @@ footer #faixa-verde-bottom-2 p {
   }
 }
 #noticias .card-noticia a {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
-  font-weight: 400;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
   color: #6f6f6e;
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
 }
 @media (max-width: 767px) {
   #noticias .card-noticia a {
@@ -7576,9 +7639,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #galeria h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7586,10 +7649,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #galeria h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
   margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 45px;
@@ -7597,18 +7660,19 @@ footer #faixa-verde-bottom-2 p {
 }
 #galeria p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
 }
 /*--------------------------------------------------------------
 ### Equipe
 --------------------------------------------------------------*/
 #equipe h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 60px;
@@ -7616,23 +7680,20 @@ footer #faixa-verde-bottom-2 p {
 }
 #equipe h2 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   font-weight: 400;
-  text-transform: initial;
   margin-top: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
 #equipe p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 23px;
+  font-weight: 300;
   padding: 15px 0;
   border-top: 1px solid #ebebeb;
 }
@@ -7642,7 +7703,7 @@ footer #faixa-verde-bottom-2 p {
   margin-bottom: 60px;
   background-color: #ffffff;
   padding: 30px;
-  min-height: 450px;
+  min-height: 520px;
 }
 #equipe .card-equipe img {
   display: block;
@@ -7655,6 +7716,7 @@ footer #faixa-verde-bottom-2 p {
   font-size: 3rem;
   line-height: 33px;
   color: #006d46;
+  margin-left: -15px;
 }
 @media (max-width: 767px) {
   #equipe .card-equipe h3 {
@@ -7666,10 +7728,19 @@ footer #faixa-verde-bottom-2 p {
   font-size: 24px;
   font-size: 2.4rem;
   color: #6f6f6e;
+  margin-left: -15px;
 }
 /*--------------------------------------------------------------
 # equipe-single
 --------------------------------------------------------------*/
+.body-equipe {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#equipe-single {
+  background-color: #f9f9f9;
+  margin: 0 15px 15px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+}
 #equipe-single br {
   padding-bottom: 15px;
   content: "A" !important;
@@ -7688,9 +7759,9 @@ footer #faixa-verde-bottom-2 p {
 }
 #equipe-single h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 31px;
@@ -7700,10 +7771,9 @@ footer #faixa-verde-bottom-2 p {
 }
 #equipe-single h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
   font-weight: 400;
   padding-bottom: 30px;
 }
@@ -7720,12 +7790,10 @@ footer #faixa-verde-bottom-2 p {
 #equipe-single p,
 #equipe-single li {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
+  font-weight: 300;
 }
 #equipe-single ul {
   list-style: none;
@@ -7735,6 +7803,7 @@ footer #faixa-verde-bottom-2 p {
 #equipe-single ul li {
   padding-left: 15px;
   text-indent: -0.7em;
+  padding-bottom: 30px;
 }
 #equipe-single ul li:before {
   content: "• ";
@@ -7756,6 +7825,7 @@ footer #faixa-verde-bottom-2 p {
   bottom: 0;
   text-align: right;
   width: 100%;
+  padding-right: 30px;
 }
 @media (max-width: 991px) {
   #equipe-single .links {
@@ -7776,9 +7846,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #artigos h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   /*        font-size: 31px;
@@ -7804,12 +7874,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #artigos p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
-  font-size: 23px;
-  font-size: 2.3rem;
-  line-height: 31px;
+  font-weight: 300;
 }
 #artigos ul {
   margin: 0;
@@ -7849,9 +7917,9 @@ footer #faixa-verde-bottom-2 p {
 }
 #divulgacao h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 60px;
@@ -7874,12 +7942,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #divulgacao .divulgacao-item p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
+  font-weight: 300;
 }
 /*--------------------------------------------------------------
 # expedicoes
@@ -7892,9 +7958,9 @@ footer #faixa-verde-bottom-2 p {
 }
 #expedicoes h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 60px;
@@ -7906,16 +7972,17 @@ footer #faixa-verde-bottom-2 p {
 }
 #expedicoes p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
 }
 #expedicoes h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 400;
   color: #006d46;
   padding-top: 45px;
   padding-bottom: 45px;
@@ -7944,12 +8011,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #expedicoes ul li a {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 49px;
+  font-weight: 300;
 }
 #expedicoes ul li:before {
   content: ".";
@@ -7970,9 +8035,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #noticia-single h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-bottom: 30px;
@@ -7985,9 +8050,10 @@ footer #faixa-verde-bottom-2 p {
 }
 #noticia-single p {
   color: #6f6f6e;
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 22.5px;
+  font-size: 2.25rem;
   line-height: 40px;
+  font-weight: 300;
   padding-top: 45px;
 }
 /*--------------------------------------------------------------
@@ -7995,9 +8061,9 @@ footer #faixa-verde-bottom-2 p {
 --------------------------------------------------------------*/
 #projetos h1 {
   color: #006d46;
-  font-size: 41px;
-  font-size: 4.1rem;
-  line-height: 41px;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 60px;
@@ -8008,16 +8074,17 @@ footer #faixa-verde-bottom-2 p {
 }
 #projetos .projeto-item h2 {
   color: #7fcb44;
-  font-size: 27.5px;
-  font-size: 2.75rem;
-  line-height: 30px;
-  font-weight: 600;
-}
-#projetos .projeto-item p {
-  color: #6f6f6e;
   font-size: 25px;
   font-size: 2.5rem;
   line-height: 40px;
+  font-weight: 400;
+}
+#projetos .projeto-item p {
+  color: #6f6f6e;
+  font-size: 22.5px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 300;
 }
 /*--------------------------------------------------------------
 # blueimp-gallery
